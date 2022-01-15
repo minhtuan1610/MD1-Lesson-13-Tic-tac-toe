@@ -31,10 +31,10 @@ function changeO() {
     let positionX = prompt("X: ");
     let positionY = prompt("Y: ");
     board[positionX][positionY] = "O";
-    for (let i = 0; i < 3; i++) {
+    for (let k = 0; k < 3; k++) {
         data += "<br>";
-        for (let j = 0; j < 3; j++) {
-            data += board[i][j] + "&nbsp;&nbsp;";
+        for (let l = 0; l < 3; l++) {
+            data += board[k][l] + "&nbsp;&nbsp;";
         }
     }
     data += "<br><br>" + "<input onClick='changeX()' type='button' value='Change X'>" + "<input onClick='changeO()' type='button' value='Change O'>";
